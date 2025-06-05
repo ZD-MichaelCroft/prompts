@@ -3,5 +3,6 @@ Mission: This app is built to provide a summary view of Zendesk Custom Objects
 Action: Create a ticket app that returns every custom object and gets the record count for each, displaying only the custom objects that have one or more records.  Each custom object in the results table should be a link to the custom object.
           
 Parts: 
+all apis needed to build this app are in thr file https://github.com/ZD-MichaelCroft/prompts/blob/main/instructions.md
 
 Scope: This app is for agents viewing support tickets.  It displays at-a-glance information about the custom objects and their records associated wih the instance, within the scope of custom objects visible to the agent.
