@@ -1,0 +1,37 @@
+Mission: This app is built to provide a summary view of Zendesk Custom Objects
+
+Action: Create a ticket app that returns every custom object and gets the record count for each, displaying only the custom objects that have one or more records.  Each custom object in the results table should be a link to the custom object.
+          
+Parts: List Custom Objects: 
+Use List Custom Objects (GET /api/v2/custom_objects) to get all the custom objects in the account.  The results with be a JSON object with a "custom objects" array.  The array will look like this:
+{
+  "custom_objects": [
+    {
+      "url": "https://z3n-whiterose.zendesk.com/api/v2/custom_objects/01___field.json",
+      "key": "01___field",
+      "created_by_user_id": "1263528238050",
+      "updated_by_user_id": "1263528238050",
+      "created_at": "2024-11-25T20:42:45Z",
+      "updated_at": "2024-11-25T20:42:45Z",
+      "title": "01 - Field",
+      "raw_title": "01 - Field",
+      "title_pluralized": "01 - Fields",
+      "raw_title_pluralized": "01 - Fields",
+      "description": "",
+      "raw_description": "",
+      "include_in_list_view": true,
+      "allows_photos": false
+    }]}
+
+Parts: Count Custom Object Records:
+Use Count Custom Object Records (GET /api/v2/custom_objects/{custom_object_key}/records/count) 
+
+The count will be a "count" object with a "value" element
+{
+  "count": {
+    "value": 2,
+    "refreshed_at": "2025-06-05T21:05:08+00:00"
+  }
+}
+
+Scope: This app is for agents viewing support tickets.  It displays at-a-glance information about the custom objects and their records associated wih the instance, within the scope of custom objects visible to the agent.
