@@ -1,6 +1,13 @@
 ## purpose
 This file will include APIs that I want to specify for AI built code, so that a LLM can read this file and know the methods and expected results of key public APIs that it's not great at locating
 
+
+## General Instructions
+
+Always enable Dark Mode following the Dark Mode Guidance and the Garden component option
+### Dark Mode Guidance
+Source: https://developer.zendesk.com/documentation/apps/app-developer-guide/dark-mode/
+
 ## APIs
 ### Zendesk
 #### Custom Objects
