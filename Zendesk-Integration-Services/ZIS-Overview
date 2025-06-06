@@ -1,0 +1,7 @@
+Mission: This app is built to provide a summary view of Zendesk Intgration Services (ZIS) 
+
+Action: Create a ticket sidebar app that returns every ZIS integration in the account , including their active/inactive status. Each custom object in the results table should be a link to the custom object.
+
+Parts: General Guidance and all apis needed to build this app are in thr file https://github.com/ZD-MichaelCroft/prompts/blob/main/instructions.md  Each Integration should expand to show the bundles associated with it.  Each bundle should generate a visual representation of the states in the flows in the bundle the paths between them.  
+
+Scope: This app is for agents viewing support tickets. It displays at-a-glance information about the ZIS associated wih the instance, and shows the state machine for specified bundles.
