@@ -1,6 +1,6 @@
 Mission: This app is built to provide a summary view of Zendesk Intgration Services (ZIS) 
 
-Action: Create a ticket sidebar app that returns every ZIS integration in the account , including their active/inactive status. If the user is an admin, then link out to the integrations log in the admin center
+Action: Create a ticket sidebar app that returns every ZIS integration in the account , including their active/inactive status. If the user is an admin, then link out to the integrations log in the admin center (https://ingrammicrosupport1700367431.zendesk.com/admin/apps-integrations/integrations/logs?product=actions) 
 
 Parts: General Guidance and all apis needed to build this app are in the document https://raw.githubusercontent.com/ZD-MichaelCroft/prompts/refs/heads/main/instructions.md Incorporate all instructions and any necessary APIs from that document.
 
